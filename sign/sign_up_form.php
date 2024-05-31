@@ -31,11 +31,12 @@
             <div class="form-group">
                 <label for="bidang">Bidang</label>
                 <select class="form-control" id="bidang" name="bidang" required>
-                    <option value="" disabled selected>-- Select Bidang --</option>
-                    <option value="software">Software Development</option>
-                    <option value="finance">Finance</option>
-                    <option value="marketing">Marketing</option>
-                    <option value="sales">Sales</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Business Development">Business Development</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Recruiting">Recruiting</option>
                 </select>
             </div>
             <div class="form-group">
