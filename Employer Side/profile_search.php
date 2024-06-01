@@ -18,7 +18,7 @@
 
     <!-- Result -->
     <?php
-    require "../connect_db.php";
+    require "../misc/connect_db.php";
     $sql = "SELECT * FROM experts";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {

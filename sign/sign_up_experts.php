@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Form</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<?php require "../misc/header.php" ?>
 <body>
     <div class="container mt-5">
         <h1 class="mb-4">Sign-up Form</h1>
@@ -19,7 +11,6 @@
                 <label for="alamat">Password</label>
                 <input type="password" class="form-control" id="pass" name="pass" placeholder="Password:" required>
             </div>
-
             <div class="form-group">
                 <label for="nama">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required>
@@ -43,12 +34,10 @@
                 <label for="file">Upload PDF</label>
                 <input type="file" class="form-control-file" id="file" accept="application/pdf" name="file" required>
             </div>
-            <button type="submit" class="btn btn-primary">Upload</button>
+            <input type="hidden" name="form_type" value="user">
+            <button type="submit" class="btn btn-primary mb-2">Upload</button>
+            <a href="sign_up_admin.php" class="badge bg-success py-2" style="color: white; float: right">Sign-up as Employer</a>
         </form>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
