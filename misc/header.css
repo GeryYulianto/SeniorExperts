@@ -1,3 +1,8 @@
+/* MAIN */
+html {
+    scroll-behavior: smooth;
+}
+
 /* NAVIGATION BAR */
 .navbar {
     color: white;
@@ -6,7 +11,7 @@
 
 .navbar-nav .nav-link {
     font-size: 23px;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-right: 20px;
 }
 
