@@ -38,7 +38,7 @@
                     <a class="nav-link" href="courses.php">Pelatihan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about_us.php">Tentang Kami</a>
+                    <a class="nav-link" href="about_us.php">Hubungi Kami</a>
                 </li>
                 <?php 
                     if (isset($_SESSION['nama'])) {
