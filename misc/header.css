@@ -1,6 +1,7 @@
 /* NAVIGATION BAR */
 .navbar {
-    background-color: #0D235D !important;
+    color: white;
+    background-color: #0D235D;
 }
 
 .navbar-nav .nav-link {
@@ -10,7 +11,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-brand {

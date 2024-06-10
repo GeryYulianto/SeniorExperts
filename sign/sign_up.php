@@ -1,4 +1,5 @@
-<?php
+<?php session_start();
+ob_start();
 require "../misc/header.php";
 
 $servername = "localhost";
@@ -30,7 +31,7 @@ function getallval($form_type) {
     else if ($form_type === 'company') {
         $idPerusahaan = $_POST['idPerusahaan'];
         $pass = md5($_POST['pass']);
-        $namaPerusahaan = $_POST['companyName'];
+        $namaPerusahaan = $_POST['nama'];
         $alamatPerusahaan = $_POST['alamat'];
 
         return array($idPerusahaan, $pass, $namaPerusahaan, $alamatPerusahaan);
@@ -79,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 echo '<div class="alert alert-success mt-3" role="alert">';
                 echo "Sign Up Successful! Redirecting you back to home page in 3 Seconds!";
                 echo '</div>';
+                $_SESSION['nama'] = $nama;
             } else {
                 echo "Error:" . $stmt->error;
             }
@@ -112,6 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             echo '<div class="alert alert-success mt-3" role="alert">';
             echo "Sign Up Successful! Redirecting you back to home page in 3 Seconds!";
             echo '</div>';
+            $_SESSION['nama'] = $namaPerusahaan;
         } else {
             echo "Error:" . $stmt->error;
         }
@@ -121,5 +124,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 // Add redirect
 $stmt->close();
 $conn->close();
+ob_start();
 
+echo header('refresh:3;../home/index.php');
+
+ob_end_flush();
 ?>

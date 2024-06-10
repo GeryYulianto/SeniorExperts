@@ -1,0 +1,284 @@
+/* MAIN */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('role_images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 50px;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #0D235D !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 23px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Role Selection for role.html */
+.container {
+    text-align: center;
+    margin-top: 100px;
+    color: #AD0E25;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.role-selection {
+    margin-top: 50px;
+}
+
+.role-card {
+    color:black;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.role-card:hover {
+    transform: scale(1.1);
+}
+
+.role-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.role-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.role-link:hover{
+    text-decoration: none;
+}
+
+.footer {
+    text-align:right;
+    margin-top: 50px;
+    margin-right: 30px;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px; 
+}
+
+.footer a:hover {
+    color: #AD0E25;
+}
+
+/* Role Card for Login & Sign Up */
+.role-card-login, .role-card-signup-ent, .role-card-signup-emp{
+    color:#AD0E25;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-color: #AD0E25;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.role-card-login{
+    margin-top: 15%;
+}
+
+.role-card-signup-ent{
+    margin-top: 30%;
+}
+
+.role-card-signup-emp{
+    margin-top: 55%;
+}
+
+.overlay {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.overlay p {
+    margin: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:black;
+}
+
+/* login-entrepreneur Overlay */
+.login-ent-overlay {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.login-ent-overlay input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.login-ent-overlay input::placeholder{
+    font-size: 20px;
+}
+
+/* Login / Signup selection */
+.selection-title{
+    font-family: 'Archivo', sans-serif; 
+    color: #AD0E25;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Login / Signup */
+.login, .login-false{
+    margin-right: 15%;
+}
+
+.signup, .signup-false{
+    margin-left: 15%;
+}
+
+.login-false, .signup-false{
+    text-decoration: none;
+    color: black;
+}
+
+.signup-false:hover, .login-false:hover{
+    text-decoration: none;
+    color: #AD0E25;
+}
+
+.login-hr, .signup-hr{
+    flex-grow: 1;
+    height: 1px;
+    border: none;
+    border-top: 3px solid #000;  
+    border-color: #AD0E25;      
+}
+
+.login-hr{
+    margin-right: 50%;
+    margin-left: 4%;
+}
+
+.signup-hr{
+    margin-left: 50%;
+    margin-right: 4%;
+}
+
+.login-button{
+    background-color: #AD0E25;
+    border-color: #AD0E25;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 0px;
+    border-radius: 2px;
+}
+
+.login-button:hover{
+    background-color: #5f0412;
+    border-color: #5f0412;
+    color:whitesmoke;
+}
+
+/* Forgot Password entrepreneur */
+.forgot-password-ent{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.forgot-password-ent:hover{
+    text-decoration: none;
+    color: #AD0E25;
+}
+
+
+/* Responsiveness */
+@media (max-width:1000px){
+    .login-true{
+        margin-right: 12%;
+    }
+    
+    .signup-false{
+        margin-left: 12%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    .role-card2 {
+        height: auto;
+        max-width: none;
+        padding: 10px;
+    }
+
+    .login-ent-overlay {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .login-button {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}

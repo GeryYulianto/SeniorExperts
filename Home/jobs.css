@@ -1,0 +1,263 @@
+/* MAIN */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none; 
+}
+
+a{
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #0D235D !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 23px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ============= All Jobs ============= */
+/* Title */
+.all-jobs {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.line-left, .line-right {
+    flex-grow: 1;
+    height: 1px;
+    border: none;
+    border-top: 3px solid #000;  
+    border-color: #AD0E25;          
+}
+
+.line-left{
+    margin-left: 6%;
+    margin-right: 3%;
+}
+
+.line-right{
+    margin-left: 3%;
+    margin-right: 6%;
+}
+
+/* Section */
+.section{
+    background-color: #73737328;
+    margin-bottom: 30px;
+}
+
+.div-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.logo{
+    max-width: 130px;
+    border-radius: 15px;
+    height: auto;
+    border: 3.5px solid black;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.job-name{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.job-location{
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.overlay {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: #f6f4f3;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.schedule{
+    color: #ad0e25;
+}
+
+.schedule p{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 0px;
+}
+
+/* Full time section */
+.full-time{
+    color: #269577;
+    display: flex;
+    align-items: center; 
+}
+
+.full-time p{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 0px;
+}
+
+/* Part time section */
+.part-time{
+    color: #f5aa27;
+    display: flex;
+    align-items: center; 
+}
+
+.part-time p{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 0px;
+}
+
+.price{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.overlay-price{
+    color:white;
+    background-color: #0d235d;
+    border-radius: 20px;
+    padding: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.overlay-price p{
+    margin-bottom: 0px;
+}
+
+.price-price{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.price-time{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.uploaded{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #0d235d;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.uploaded-date{
+    color: black;
+    font-weight: 500;
+}
+
+/* COURSES */
+.courses-action{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(186, 186, 186);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 10px;
+}
+
+
+/* Google Icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-right: 5px;
+}
+
+/* Media */
+@media (max-width: 768px) {
+    .all-jobs{
+        font-size: 40px;
+    }
+}

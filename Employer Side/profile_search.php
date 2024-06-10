@@ -1,7 +1,6 @@
-<?php require "../misc/header.php" ?>
-<body>
-    <!-- Header... -->
-
+<?php
+$current_page = 'profile_search'; 
+require "../misc/header.php" ?>
     <!-- Search Filter-->
     <form id="categoryForm" action="" method="post" class="my-2">
         <select name="category" onchange="document.getElementById('categoryForm').submit();">
@@ -69,5 +68,4 @@
     $conn->close();
 ?>
 
-</body>
-</html>
+<?php require "../misc/footer.php" ?>
