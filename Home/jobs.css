@@ -27,7 +27,7 @@ a:hover{
 
 .navbar-nav .nav-link {
     font-size: 23px;
-    margin-left: 70px;
+    margin-left: 60px;
     margin-right: 20px;
 }
 
@@ -83,6 +83,7 @@ a:hover{
 }
 
 .logo{
+    width: 130px;
     max-width: 130px;
     border-radius: 15px;
     height: auto;
@@ -219,6 +220,21 @@ a:hover{
 }
 
 /* COURSES */
+.overlay-price-courses{
+    color:white;
+    background-color: #0d235d;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay-price-courses p{
+    margin-bottom: 0px;
+}
+
 .courses-action{
     margin-top: 10px;
     margin-bottom: 0px;
@@ -230,6 +246,48 @@ a:hover{
     font-style: normal;
     color: black;
     font-weight: 500;
+}
+
+.overlay2, .overlay3 {
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.overlay2{
+    background-color: #26957775;
+    margin-left: 20px;
+}
+
+.overlay3 {
+    background-color: #AD0E2575;
+}
+
+
+/* duration */
+.duration{
+    color: black;
+    display: flex;
+    align-items: center; 
+}
+
+.duration p{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -260,4 +318,71 @@ footer p {
     .all-jobs{
         font-size: 40px;
     }
+}
+
+
+
+/* Bottom Page */
+.bottom-logo {
+    width: 100px;
+    height: auto; 
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.bottom-links {
+    list-style-type: none; 
+    padding: 0; 
+    gap: 20px; 
+}
+
+.bottom-links li {
+    margin-bottom: 7px;
+}
+
+.bottom-links a {
+    text-decoration: none; 
+    font-size: 20px; 
+}
+
+.bottom-links a:hover {
+    color: rgb(114, 114, 114);
+}
+
+.contact-us-p {
+    display: flex; 
+    align-items: center; 
+    font-size: 15px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    margin-right: 1%;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.social-icons img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(186, 186, 186);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 10px;
 }
