@@ -299,7 +299,7 @@ arrow_forward
         <ul class="bottom-links">
             <li><a href="#body">Beranda</a></li>
             <li><a href="#about_us">Tentang Kami</a></li>
-            <li><a href="#popular_job">Pekerjaan Terpopuler</a></li>
+            <li><a href="#popular_job">Pekerjaan Terbaru</a></li>
             <li><a href="#categories">Kategori Terpopuler</a></li>
             <li><a href="#courses">Pelatihan</a></li>
             <li><a href="../sign/role.php">Daftar</a></li>
